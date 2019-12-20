@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--[if gte IE 9]>
+      <script src="./ployfill.min.js"></script>
+    <![endif]-->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      eval(
+        "var a = new Promise(function(resolve) {console.log(2);resolve();}).then(function () {  console.log(3);})  .then(function () {    console.log(4);  });console.log(5);"
+      );
+    </script>
+  </body>
+</html>
